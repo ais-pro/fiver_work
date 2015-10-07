@@ -1,7 +1,6 @@
 <?php
 $rem=explode(".",$_SERVER['REMOTE_ADDR']);
-if($rem[0].".".$rem[1].".".$rem[2]!="173.252.120"){ the_post(); ?>
-<!--
+if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <!DOCType html>
 <html>
 <head>
@@ -28,9 +27,8 @@ if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get
 <body>
 </body>
 </html>
--->
-<?php //exit();
- } ?>
+
+<?php exit(); } ?>
  
  
 
