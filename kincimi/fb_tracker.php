@@ -1,19 +1,37 @@
 <?php
 $rem=explode(".",$_SERVER['REMOTE_ADDR']);
-if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
+if($rem[0].".".$rem[1].".".$rem[2]!="173.252.120"){ the_post(); ?>
+<!--
 <!DOCType html>
 <html>
 <head>
 <meta property="og:title" content="Workday Sets Price Range for I.P.O." />
 <meta property="og:site_name" content="<?php wp_title( '' ); ?>"/>
 <meta property="og:type" content="article" />
-<meta property="og:locale" content="en_US" />            <!-- Default -->
+<meta property="og:locale" content="en_US" />            
 
-<?php if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.the_post_thumbnail().'" />'; } ?>
+<?php
+$apvp[0]='[vc_row]';
+$apvp[1]='[vc_column width="1/1"]';
+$apvp[2]='[vc_column_text]';
 
-<meta property="og:description" content="<?php the_content(); ?>" />
+$aprp[0]='';
+$aprp[1]='';
+$aprp[2]='';
+
+$the_removed_tag_value=strip_tags(get_the_content());
+$replaced_val=preg_replace($apvp,$aprp,$the_removed_tag_value);
+
+if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
+
+<meta property="og:description" content="<?php echo $replaced_val; ?>" />
 </head>
 <body>
 </body>
 </html>
-<?php exit(); } ?>
+-->
+<?php //exit();
+ } ?>
+ 
+ 
+
