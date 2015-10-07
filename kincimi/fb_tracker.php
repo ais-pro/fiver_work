@@ -4,7 +4,7 @@ if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <!DOCType html>
 <html>
 <head>
-<meta property="og:title" content="Workday Sets Price Range for I.P.O." />
+<meta property="og:title" content="<?php bloginfo('name'); ?>" />
 <meta property="og:site_name" content="<?php wp_title( '' ); ?>"/>
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="en_US" />            
