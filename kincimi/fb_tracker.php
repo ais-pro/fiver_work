@@ -18,7 +18,8 @@ $apvp[]='[/vc_column]';
 $apvp[]='[/vc_row]';
 
 $the_removed_tag_value=strip_tags(get_the_content());
-$replaced_val=str_replace($apvp,"",$the_removed_tag_value);
+$remove_vc_image=preg_replace('/[vc_single_image "(.+?)">(.+?)]/i', "[$2]", $the_removed_tag_value);
+$replaced_val=str_replace($apvp,"",$remove_vc_image);
 
 if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
 
