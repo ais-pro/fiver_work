@@ -11,11 +11,12 @@ if($rem[0].".".$rem[1].".".$rem[2]!="173.252.120"){ the_post(); ?>
 <meta property="og:locale" content="en_US" />            
 
 <?php
-$apvp[0]='[vc_row]';
-$apvp[1]='[vc_column width="1/1"]';
-$apvp[2]='[vc_column_text]';
-
-
+$apvp[]='[vc_row]';
+$apvp[]='[vc_column width="1/1"]';
+$apvp[]='[vc_column_text]';
+$apvp[]='[/vc_column_text]';
+$apvp[]='[/vc_column]';
+$apvp[]='[/vc_row]';
 
 $the_removed_tag_value=strip_tags(get_the_content());
 $replaced_val=str_replace($apvp,"",$the_removed_tag_value);
