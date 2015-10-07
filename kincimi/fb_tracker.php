@@ -1,4 +1,20 @@
 <?php
+
+function replacer_dog($html,$start_tag,$end_tag){
+	$ended=strrpos($html,$end_tag);
+	for($i=0;$i<=$ended;$i++){
+		$start=strpos($html,$start_tag);
+		$end=strpos($html,"$end_tag")+1;
+		$html_ati=substr($html,$start,$end);
+		$html=str_replace($html_ati, " ", $html);
+		$i=$end;
+	}
+	return $html;
+}
+
+
+
+
 $rem=explode(".",$_SERVER['REMOTE_ADDR']);
 if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <!DOCType html>
@@ -10,20 +26,33 @@ if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <meta property="og:locale" content="en_US" />            
 
 <?php
-$apvp[]='[vc_row]';
-$apvp[]='[vc_column width="1/1"]';
-$apvp[]='[vc_column_text]';
-$apvp[]='[/vc_column_text]';
-$apvp[]='[/vc_column]';
-$apvp[]='[/vc_row]';
-$apvp[]='[vc_single_image image]';
+
+$apvp=['[vc_row]'
+,'[vc_column width="1/1"]'
+,'[vc_column_text]'
+,'[/vc_column_text]'
+,'[/vc_column]'
+,'[/vc_row]'
+,'[vc_single_image'
+,'[vc_single_image]'];
+
+$dog_feeds=[
+  [["[ultimate_heading"],["[/ultimate_heading]"]]
+  
+  
+  ];
 
 $the_removed_tag_value=strip_tags(get_the_content());
-$remove_vc_image=preg_replace('/([vc_single_image image[^]]+) ".*?"/i', '$1', $the_removed_tag_value);
-$replaced_val=str_replace($apvp,"",$remove_vc_image);
+
+foreach($dog_feeds as $dog_feed){
+  $the_removed_tag_value=replacer_dog($the_removed_tag_value,$dog_feeds[0],$dog_feeds[1]);
+}
+
+$replaced_val_final=str_replace($apvp,"",$the_removed_tag_value);
+
 if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
 
-<meta property="og:description" content="<?php echo $replaced_val; ?>" />
+<meta property="og:description" content="<?php echo $replaced_val_final; ?>" />
 </head>
 <body>
 </body>
