@@ -37,7 +37,7 @@ $apvp=['[vc_row]'
 ,'[vc_single_image]'];
 
 $dog_feeds=[
-  [["[ultimate_heading"],["[/ultimate_heading]"]]
+  ["[ultimate_heading","[/ultimate_heading]"]
   
   
   ];
