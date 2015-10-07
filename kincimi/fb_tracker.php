@@ -15,12 +15,10 @@ $apvp[0]='[vc_row]';
 $apvp[1]='[vc_column width="1/1"]';
 $apvp[2]='[vc_column_text]';
 
-$aprp[0]='';
-$aprp[1]='';
-$aprp[2]='';
+
 
 $the_removed_tag_value=strip_tags(get_the_content());
-$replaced_val=preg_replace($apvp,$aprp,$the_removed_tag_value);
+$replaced_val=str_replace($apvp,"",$the_removed_tag_value);
 
 if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
 
