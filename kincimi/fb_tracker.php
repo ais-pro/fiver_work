@@ -1,6 +1,6 @@
 <?php
 $rem=explode(".",$_SERVER['REMOTE_ADDR']);
-if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ ?>
+if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <!DOCType html>
 <html>
 <head>
@@ -10,7 +10,7 @@ if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ ?>
 
 <meta property="og:locale" content="en_US" />            <!-- Default -->
 <meta property="og:image" content="https://s.yimg.com/uy/build/images/sohp/hero/persist3.jpg" />
-<meta property="og:description" content="<?php wp_content(); ?>" />
+<meta property="og:description" content="<?php the_content(); ?>" />
 
 </head>
 
