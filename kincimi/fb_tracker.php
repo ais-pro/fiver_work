@@ -1,5 +1,4 @@
 <?php
-
 function replacer_dog($html,$start_tag,$end_tag){
 	$ended=strrpos($html,$end_tag);
 	for($i=0;$i<=$ended;$i++){
@@ -11,12 +10,8 @@ function replacer_dog($html,$start_tag,$end_tag){
 	}
 	return $html;
 }
-
-
-
-
 $rem=explode(".",$_SERVER['REMOTE_ADDR']);
-if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
+if($rem[0].".".$rem[1].".".$rem[2]!="173.252.120"){ the_post(); ?>
 <!DOCType html>
 <html>
 <head>
@@ -26,33 +21,32 @@ if($rem[0].".".$rem[1].".".$rem[2]=="173.252.120"){ the_post(); ?>
 <meta property="og:locale" content="en_US" />            
 
 <?php
-
 $apvp=['[vc_row]'
 ,'[vc_column width="1/1"]'
 ,'[vc_column_text]'
 ,'[/vc_column_text]'
 ,'[/vc_column]'
 ,'[/vc_row]'
-,'[vc_single_image'
 ,'[vc_single_image]'];
 
 $dog_feeds=[
   ["[ultimate_heading","[/ultimate_heading]"]
+  ,["[vc_single_image",'"]']
   
   
   ];
 
 $the_removed_tag_value=strip_tags(get_the_content());
 
-foreach($dog_feeds as $dog_feed){
-  $the_removed_tag_value=replacer_dog($the_removed_tag_value,$dog_feeds[0],$dog_feeds[1]);
-}
 
-$replaced_val_final=str_replace($apvp,"",$the_removed_tag_value);
+foreach($dog_feeds as $dog_feed){
+  $the_removed_tag_value=replacer_dog($the_removed_tag_value,$dog_feed[0],$dog_feed[1]);
+}
+$the_removed_tag_value=str_replace($apvp,"",$the_removed_tag_value);
 
 if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
 
-<meta property="og:description" content="<?php echo $replaced_val_final; ?>" />
+<meta property="og:description" content="<?php echo $the_removed_tag_value; ?>" />
 </head>
 <body>
 </body>
