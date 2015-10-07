@@ -16,11 +16,11 @@ $apvp[]='[vc_column_text]';
 $apvp[]='[/vc_column_text]';
 $apvp[]='[/vc_column]';
 $apvp[]='[/vc_row]';
+$apvp[]='[vc_single_image image]';
 
 $the_removed_tag_value=strip_tags(get_the_content());
-$remove_vc_image=preg_replace('/[vc_single_image "(.+?)">(.+?)]/i', "[$2]", $the_removed_tag_value);
+$remove_vc_image=preg_replace('/([vc_single_image image[^]]+) ".*?"/i', '$1', $the_removed_tag_value);
 $replaced_val=str_replace($apvp,"",$remove_vc_image);
-
 if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get_attachment_url( get_post_thumbnail_id($post->ID)).'" />'; } ?>
 
 <meta property="og:description" content="<?php echo $replaced_val; ?>" />
@@ -30,6 +30,3 @@ if ( has_post_thumbnail() ) {  echo '<meta property="og:image" content="'.wp_get
 </html>
 
 <?php exit(); } ?>
- 
- 
-
