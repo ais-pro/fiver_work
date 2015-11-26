@@ -112,7 +112,7 @@ a:focus, a:hover {
 
 a:focus,
 a:hover {
-	color: #2F2F2F;
+	color: #6cb670;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,8 +125,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-	background-color: #4E6471;
-	color: #fff;
+	background-color: transparent;
+	color: #4E6471;
 	padding: 10px 30px;
 	border-radius: 0;
 	margin-top: 15px;
