@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
 	background-color: transparent;
-	color: #4E6471;
+	color: #fff;
 	padding: 10px 30px;
 	border-radius: 0;
 	margin-top: 15px;
@@ -136,6 +136,8 @@ h1, h2, h3, h4, h5, h6 {
 		 -o-transition: all .5s ease-in 0s;
 			transition: all .5s ease-in 0s;
 }
+
+
 
 .btn:focus {
 	color: #ddd;
@@ -164,6 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #6cb670 !important;
 	border: 1px solid transparent;
 	color: #fff !important;
+}
+.excerpt a.btn.btn-transparent {
+	    color: #4E6471;
 }
 
 .form-control {
