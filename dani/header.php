@@ -31,6 +31,12 @@
 <?php endif; ?>
 
 <?php wp_head(); ?>
+<style>
+.note{
+    background: #fff;
+    color: #222222;
+}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
