@@ -275,6 +275,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #080808;
 }
 
+
+.grayBg {
+	background-color: #E8E8E8;
+}
+
 .parallax-section {
 	background-attachment: fixed !important;
 	background-position: center center;
@@ -340,6 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
 	border-bottom: 1px solid #666;
 	margin-bottom: 0;
+background:#222;
 }
 
 .navbar-brand {
@@ -370,6 +376,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-inverse .navbar-nav > li > a:hover {
 	color: #6cb670;
+}
+
+nav.collapse.navbar-collapse.navbar-right{
+margin-top:15px;
 }
 
 /*--------------------------------------------------------------
