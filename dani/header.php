@@ -36,6 +36,12 @@
     background: #fff;
     color: #222222;
 }
+#single-blog .note .excerpt h3 a{
+    color:#6cb670;
+}
+#single-blog .note .excerpt h3 a:hover{
+    color:#025A02;
+}
 </style>
 </head>
 
