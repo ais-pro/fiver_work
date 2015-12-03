@@ -1052,6 +1052,9 @@ margin-top:15px;
     padding-left: 10px;
     min-height: 240px;
     display: inline-block;
+    min-width:100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 .note .excerpt h3 {
