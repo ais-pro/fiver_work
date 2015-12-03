@@ -1048,13 +1048,18 @@ margin-top:15px;
 }
 
 .note .excerpt {
-	padding: 0 20px 20px;
+    padding-left: 10px;
+    min-height: 240px;
+    display: inline-block;
 }
 
 .note .excerpt h3 {
-	font-size: 20px;
-	line-height: 1.5;
-	text-transform: capitalize;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 5px;
+}
 }
 
 .all-post {
