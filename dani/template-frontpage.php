@@ -660,7 +660,7 @@ get_header(); ?>
 					?>
 					</div>
 
-					<div class="all-post text-center">
+					<div class="all-post text-center the_post_margin">
 						<a class="btn btn-transparent" href="<?php if( get_option( 'show_on_front' ) == 'page' ) echo get_permalink( get_option('page_for_posts' ) ); else echo esc_url( home_url() ); ?>"><?php if ( ta_option( 'btn_view_all' ) != '') :  echo ta_option( 'btn_view_all' ); ?><?php endif; ?></a>
 					</div>
 
