@@ -1037,11 +1037,14 @@ margin-top:15px;
 
 .note {
 	background-color: #000;
-	border: 1px solid #000;
+	border: 1px solid #B3B3B3;
 }
 
 .note .media-wrapper {
-	border-bottom: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
+    float: left;
+    width: 285px;
+    padding: 5px 10px 5px 5px;
 }
 
 .note .excerpt {
