@@ -661,7 +661,7 @@ get_header(); ?>
 					</div>
 
 					<div class="all-post text-center the_post_margin">
-						<a class="btn btn-transparent" href="<?php if( get_option( 'show_on_front' ) == 'page' ) echo get_permalink( get_option('page_for_posts' ) ); else echo esc_url( home_url() ); ?>"><?php if ( ta_option( 'btn_view_all' ) != '') :  echo ta_option( 'btn_view_all' ); ?><?php endif; ?></a>
+						<a class="btn btn-transparent custom_color" href="<?php if( get_option( 'show_on_front' ) == 'page' ) echo get_permalink( get_option('page_for_posts' ) ); else echo esc_url( home_url() ); ?>"><?php if ( ta_option( 'btn_view_all' ) != '') :  echo ta_option( 'btn_view_all' ); ?><?php endif; ?></a>
 					</div>
 
 				</div> <!-- .row -->
@@ -748,7 +748,7 @@ get_header(); ?>
 							</div>
 
 							<div id="cf-submit">
-								<input type="submit" id="contact-submit" class="btn btn-transparent" value="<?php _e( 'Submit', 'ta-meghna' ); ?>">
+								<input type="submit" id="contact-submit" class="btn btn-transparent custom_color" value="<?php _e( 'Submit', 'ta-meghna' ); ?>">
 							</div>
 
 						</form>
