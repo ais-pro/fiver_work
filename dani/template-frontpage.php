@@ -627,17 +627,20 @@ get_header(); ?>
 						<!-- Single blog post -->
 						<article id="single-blog" class="col-md-12 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
 							<div class="note">
-								<?php if( get_post_format() ) {
-									get_template_part( 'inc/post-formats' );
-									} elseif ( has_post_thumbnail() ) { ?>
-									<div class="media-wrapper">
-										<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" style="display:inline-block; border:5px solid #222;"><?php the_post_thumbnail( 'full', array( 'class' => "img-responsive" ) ); ?></a>
-									</div>
-								<?php } ?>
+								
 								
 								<div class="excerpt">
 									<h3><a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 									<p>
+
+<?php if( get_post_format() ) {
+									get_template_part( 'inc/post-formats' );
+									} elseif ( has_post_thumbnail() ) { ?>
+									<div class="media-wrapper">
+										<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" style="display:inline-block; border:5px solid #ccc;"><?php the_post_thumbnail( 'full', array( 'class' => "img-responsive" ) ); ?></a>
+									</div>
+								<?php } ?>
+
 									<?php if( has_excerpt() ) {
 										the_excerpt();
 									} else {
