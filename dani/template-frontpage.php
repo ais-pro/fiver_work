@@ -163,7 +163,7 @@ get_header(); ?>
 
 		<?php if ( ta_option( 'disable_services_module') == '1' ) : ?>
 		<!-- Services Section -->
-		<section id="<?php if ( ta_option( 'id_services' ) != '') :  echo ta_option( 'id_services' ); ?><?php endif; ?>" class="services-section bg-one">
+		<section id="<?php if ( ta_option( 'id_services' ) != '') :  echo ta_option( 'id_services' ); ?><?php endif; ?>" class="services-section grayBg">
 			<div class="container">
 				<div class="row">
 					
