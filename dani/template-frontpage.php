@@ -132,7 +132,7 @@ get_header(); ?>
 					$i = 1;
 					foreach( $ta_option['counter_slides'] as $counter_slide ) :
 				?>
-					<div id="count-item" class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
+					<div id="count-item" class="col-md-12 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
 						<div class="counters-item">
 							<div>
 							<?php if ( strpos( $counter_slide['subtitle'], '%' ) !== false ) { ?>
@@ -163,7 +163,7 @@ get_header(); ?>
 
 		<?php if ( ta_option( 'disable_services_module') == '1' ) : ?>
 		<!-- Services Section -->
-		<section id="<?php if ( ta_option( 'id_services' ) != '') :  echo ta_option( 'id_services' ); ?><?php endif; ?>" class="services-section grayBg">
+		<section id="<?php if ( ta_option( 'id_services' ) != '') :  echo ta_option( 'id_services' ); ?><?php endif; ?>" class="services-section bg-one">
 			<div class="container">
 				<div class="row">
 					
@@ -605,7 +605,7 @@ get_header(); ?>
 
 		<?php if ( ta_option( 'disable_blog_module') == '1' ) : ?>
 		<!-- Blog section -->
-		<section id="<?php if ( ta_option( 'id_blog' ) != '') :  echo ta_option( 'id_blog' ); ?><?php endif; ?>" class="blog-section bg-one">
+		<section id="<?php if ( ta_option( 'id_blog' ) != '') :  echo ta_option( 'id_blog' ); ?><?php endif; ?>" class="blog-section grayBg">
 			<div class="container">
 				<div class="row">
 
