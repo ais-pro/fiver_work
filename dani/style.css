@@ -1038,6 +1038,7 @@ margin-top:15px;
 .note {
 	background-color: #000;
 	border: 1px solid #B3B3B3;
+        box-shadow: 1px 1px 5px 1px #BCB7B7;
 }
 
 .note .media-wrapper {
@@ -1064,6 +1065,10 @@ margin-top:15px;
 
 .all-post {
 	margin-top: 50px;
+}
+
+article#single-blog {
+    margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
