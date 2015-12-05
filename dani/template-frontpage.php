@@ -605,7 +605,7 @@ get_header(); ?>
 
 		<?php if ( ta_option( 'disable_blog_module') == '1' ) : ?>
 		<!-- Blog section -->
-		<section id="<?php if ( ta_option( 'id_blog' ) != '') :  echo ta_option( 'id_blog' ); ?><?php endif; ?>" class="blog-section grayBg">
+		<section id="<?php if ( ta_option( 'id_blog' ) != '') :  echo ta_option( 'id_blog' ); ?><?php endif; ?>" class="blog-section grayBg nomanDicBG">
 			<div class="container">
 				<div class="row">
 
@@ -619,27 +619,31 @@ get_header(); ?>
 					<div class="clearfix">
 					<?php
 						// get recent 4 posts.
-						$the_query = new WP_Query( array( 'showposts' => 4, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'has_password' => false, ) );
+						$the_query = new WP_Query( array( 'showposts' => 3, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'has_password' => false, ) );
 						if ( $the_query->have_posts() ) :
 						$i = 1;
 						while( $the_query->have_posts() ): $the_query->the_post();
 					?>
 						<!-- Single blog post -->
-						<article id="single-blog" class="col-md-12 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
+						<article id="single-blog" class="col-md-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
 							<div class="note">
 								
-								
-								<div class="excerpt">
-									<h3><a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-									<p>
-
 <?php if( get_post_format() ) {
 									get_template_part( 'inc/post-formats' );
 									} elseif ( has_post_thumbnail() ) { ?>
 									<div class="media-wrapper">
-										<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" style="display:inline-block; border:5px solid #ccc;"><?php the_post_thumbnail( 'full', array( 'class' => "img-responsive" ) ); ?></a>
+										<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" style="display:inline-block;"><?php the_post_thumbnail( 'large', array( 'class' => "img-responsive" ) ); ?></a>
 									</div>
-								<?php } ?>
+								<?php } ?>								
+
+								<div class="excerpt">
+
+
+
+									<h3><a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+									<p>
+
+
 
 									<?php if( has_excerpt() ) {
 										the_excerpt();
