@@ -52,7 +52,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 1.0 Basic Setup
 --------------------------------------------------------------*/
 body {
-	background-color: #080808;
+	background-color: #fff;
 	font-family: 'Ubuntu', 'Arial', sans-serif;
 	line-height: 1.5;
 	/* color: #ddd; */
@@ -1201,6 +1201,7 @@ background:#fff;
 .post-item .entry {
 	border: 1px solid #4e595f;
 	margin-bottom: 30px;
+        box-shadow: 0px 0px 10px 0px #777;
 }
 
 .entry .post-excerpt {
@@ -1873,3 +1874,4 @@ img {
 	background-color: #6cb670;
 	border: 1px solid #6cb670;
 }
+a{color:#333;}
