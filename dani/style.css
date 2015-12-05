@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control {
-	background-color: #2f383d;
+	background-color: #eee;
 	border-radius: 0;
 	padding: 5px 10px;
 	border: 0 none;
@@ -1372,7 +1372,7 @@ aside.widget ul li span {
 }
 
 .widget-title h3 {
-	color: #fff;
+	color: #333;
 	margin-bottom: 15px;
 	margin-top: 0;
 	position: relative;
