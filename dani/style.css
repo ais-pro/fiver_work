@@ -55,7 +55,7 @@ body {
 	background-color: #080808;
 	font-family: 'Ubuntu', 'Arial', sans-serif;
 	line-height: 1.5;
-	color: #ddd;
+	/* color: #ddd; */
 
 	-ms-word-wrap: break-word;
 		word-wrap: break-word;
@@ -278,6 +278,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .grayBg {
 	background-color: #E8E8E8;
+}
+.whiteBg {
+	background-color: #fff;
 }
 
 .parallax-section {
