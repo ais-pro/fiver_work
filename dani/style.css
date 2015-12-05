@@ -1199,9 +1199,9 @@ background:#fff;
 }
 
 .post-item .entry {
-	border: 1px solid #4e595f;
+	border: 1px solid #aaa;
 	margin-bottom: 30px;
-        box-shadow: 0px 0px 10px 0px #777;
+        box-shadow: 0px 0px 5px 0px #777;
 }
 
 .entry .post-excerpt {
@@ -1252,8 +1252,8 @@ background:#fff;
 }
 
 .post-meta {
-	background-color: #3d444a;
-	border-top: 1px solid #4e595f;
+	background-color: #eee;
+	border-top: 1px solid #bbb;
 	font-size: 13px;
 	margin: 20px 0 0;
 	padding: 0 20px 10px;
