@@ -42,6 +42,9 @@
 #single-blog .note .excerpt h3 a:hover{
     color:#025A02;
 }
+.nomanDicBG{
+background:#DBDDDA url(http://wanderessadventures.com/wp-content/uploads/2015/12/mountain_background1.jpg) top center no-repeat;
+}
 </style>
 </head>
 
