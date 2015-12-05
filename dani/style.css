@@ -1047,15 +1047,13 @@ margin-top:15px;
 .note .media-wrapper {
 	/* border-bottom: 1px solid #000; */
     float: left;
-    width: 285px;
-    padding: 5px 10px 5px 5px;
+    width: 100%;
 }
 
 .note .media-wrapper img{width:100%;}
 
 .note .excerpt {
     padding-left: 10px;
-    min-height: 240px;
     display: inline-block;
     min-width:100%;
     padding-right: 10px;
