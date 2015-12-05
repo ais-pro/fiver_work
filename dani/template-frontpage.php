@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php if ( ta_option( 'disable_about_module') == '1' ) : ?>
 		<!-- About section -->
-		<section id="<?php if ( ta_option( 'id_about' ) != '') :  echo ta_option( 'id_about' ); ?><?php endif; ?>" class="about-section bg-one">
+		<section id="<?php if ( ta_option( 'id_about' ) != '') :  echo ta_option( 'id_about' ); ?><?php endif; ?>" class="about-section whiteBg">
 			<div class="container">
 				<div class="row">
 
