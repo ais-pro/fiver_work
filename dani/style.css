@@ -14,6 +14,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url(https://fonts.googleapis.com/css?family=Allerta);
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -383,6 +385,11 @@ background:#222;
 
 nav.collapse.navbar-collapse.navbar-right{
 margin-top:15px;
+}
+
+.nav li a{
+font-family: 'Allerta', Helvetica, Arial, sans-serif;
+font-size:20px;
 }
 
 /*--------------------------------------------------------------
