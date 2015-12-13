@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 0;
 	padding: 5px 10px;
 	border: 0 none;
-	color: #ddd;
+	color: #111;
 }
 
 .form-control:focus {
@@ -186,19 +186,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control::-webkit-input-placeholder { /*  Chrome, Safari, Opera  */
-	color: #ddd;
+	color: #555;
 }
 
 .form-control:-moz-placeholder { /* Firefox 18- */
-	color: #ddd;  
+	color: #555;  
 }
 
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-	color: #ddd;  
+	color: #555;  
 }
 
 .form-control:-ms-input-placeholder {  /*  Internet Explorer  */
-   color: #ddd;  
+   color: #555;  
 }
 
 #loading-mask {
