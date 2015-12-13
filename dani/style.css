@@ -364,23 +364,27 @@ background:#222;
 
 .navbar-inverse .navbar-nav > li > a {
 	color: #fff;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 26px;
 	padding: 20px 15px;
+	background-color: inherit;
 
-	-webkit-transition: background .5s ease-in-out 0s;
-	   -moz-transition: background .5s ease-in-out 0s;
-		 -o-transition: background .5s ease-in-out 0s;
-			transition: background .5s ease-in-out 0s;
+	-webkit-transition: all .5s ease-in-out 0s;
+	   -moz-transition: all .5s ease-in-out 0s;
+		 -o-transition: all .5s ease-in-out 0s;
+			transition: all .5s ease-in-out 0s;
 }
 
-.navbar-inverse .navbar-nav > li.current > a {
-	color: #6cb670;
-	background-color: #2f3238;
+
+
+.navbar-inverse .navbar-nav > li.current > a,  .navbar-nav > li.active > a {
+	color: #4F8E01 !important;
+	background-color: #E2E2E2 !important;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #6cb670;
+    color: #4F8E01;
+    background-color: #E2E2E2;
 }
 
 nav.collapse.navbar-collapse.navbar-right{
