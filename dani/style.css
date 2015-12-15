@@ -14,8 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Allerta);
-
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -364,9 +363,9 @@ background:#222;
 
 .navbar-inverse .navbar-nav > li > a {
 	color: #fff;
-	font-size: 17px;
+	font-size: 22px;
 	line-height: 26px;
-	padding: 20px 15px;
+	padding: 20px 20px;
 	background-color: inherit;
 
 	-webkit-transition: all .5s ease-in-out 0s;
@@ -384,7 +383,6 @@ background:#222;
 
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #4F8E01;
-    background-color: #E2E2E2;
 }
 
 nav.collapse.navbar-collapse.navbar-right{
@@ -392,7 +390,7 @@ margin-top:15px;
 }
 
 .nav li a{
-font-family: 'Allerta', Helvetica, Arial, sans-serif;
+font-family: 'Sue Ellen Francisco', cursive;
 font-size:20px;
 }
 
