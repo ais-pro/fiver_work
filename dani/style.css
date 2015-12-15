@@ -379,7 +379,7 @@ background:#222;
 
 .navbar-inverse .navbar-nav > li.current > a,  .navbar-nav > li.active > a {
 	color: #4F8E01 !important;
-	background-color: #E2E2E2 !important;
+	background-color: #222 !important;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
