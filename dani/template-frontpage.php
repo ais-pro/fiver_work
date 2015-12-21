@@ -619,10 +619,11 @@ get_header(); ?>
 					<div class="clearfix">
 					<?php
 						// get recent 4 posts.
-						$the_query = new WP_Query( array( 'showposts' => 3, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'has_password' => false, ) );
+						$the_query = new WP_Query( array( 'showposts' => 6, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'has_password' => false, ) );
 						if ( $the_query->have_posts() ) :
 						$i = 1;
 						while( $the_query->have_posts() ): $the_query->the_post();
+if($i==4)echo '</div><div class="clearfix">';
 					?>
 						<!-- Single blog post -->
 						<article id="single-blog" class="col-md-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="<?php echo ($i-1)*200,'ms'; ?>">
