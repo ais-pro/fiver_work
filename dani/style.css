@@ -1347,11 +1347,20 @@ background:#fff;
 --------------------------------------------------------------*/
 aside.widget {
 	margin-bottom: 25px;
+    background: #F9F9F9;
+    border: 1px solid #eee;
+    padding: 5px;
+    box-shadow: 0px 0px 1px 0px #222;
+}
+aside .widget-title{
+    text-align: center;
+    background: #222;
+    color: #fff;
 }
 
 aside.widget li:before {
 	font-family: "FontAwesome";
-	content: '\f067';
+	content: '\f0c5';
 }
 
 aside.widget ul li {
@@ -1380,11 +1389,23 @@ aside.widget ul li span {
 	padding-left: 8px;
 }
 
-.widget-title h3 {
-	color: #333;
-	margin-bottom: 15px;
-	margin-top: 0;
-	position: relative;
+.widget-title h3 {	
+    line-height: 34px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    position: relative;
+}
+
+div#wpwt-schedule ul li:before{
+content:'\f041';
+}
+
+div#wpwt-schedule ul li:first-child:before{
+content:'\f073';
+}
+
+div#wpwt-schedule ul li{
+list-style:none;
 }
 
 #search-form {
@@ -1884,3 +1905,7 @@ img {
 	border: 1px solid #6cb670;
 }
 a{color:#333;}
+
+.wp-world-travel ul li{
+list-style:none;
+}
