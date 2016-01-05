@@ -2416,6 +2416,8 @@ object,embed,iframe {max-width: 100%;}
 custom css
 */
 ul.tabs-list li{
+    text-align: center;
+    line-height: 30px;
     display: inline-block;
     margin: 0px;
     margin-bottom: 10px;
@@ -2426,6 +2428,9 @@ ul.tabs-list li{
 ul.tabs-list li a{
     padding: 10px;
 }
-ul.tabs-list .active{
+ul.tabs-list .active,ul.tabs-list li:hover{
     background: #03ff3e;
+}
+ul.tabs-list li a:hover{
+color:#000 !important;
 }
