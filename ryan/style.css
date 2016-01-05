@@ -2420,7 +2420,7 @@ ul.tabs-list li{
     line-height: 30px;
     display: inline-block;
     margin: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     width: 49%;
     border-left: none;
     border-right: none;
@@ -2433,4 +2433,7 @@ ul.tabs-list .active,ul.tabs-list li:hover{
 }
 ul.tabs-list li a:hover{
 color:#000 !important;
+}
+#recent-tab-2{
+display:none;
 }
