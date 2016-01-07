@@ -57,6 +57,8 @@ min-height:500px;
 
 .fourcol{ width:29.5%; padding:40px 3.5%;}
 
+div#footer .fourcol{width: 32%; }
+
 .eightcol{width:70.5%}
 
 .sixcol{width:50%}
