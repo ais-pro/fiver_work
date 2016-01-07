@@ -192,6 +192,7 @@ h2.block span{
 	border-bottom:1px solid #ddd;
 	margin-bottom:15px;
 	width:100%;
+        font:700 18px/1.1em Raleway;
 }
 
 h3{
@@ -2439,4 +2440,17 @@ display:none;
 }
 div.awesome-weather-cover{
 display:inline-block;
+}
+.es_textbox {
+    display: inline-block;
+}
+
+.es_textbox {
+    display: inline-block;
+}
+.es_textbox input{
+    width:166px;
+}
+.es_button {
+    display: inline-block;
 }
