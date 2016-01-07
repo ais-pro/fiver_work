@@ -40,7 +40,7 @@
                     
                 } else { ?>
                 
-                    <p>
+                    <p style="background:transparent">
                     	&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?> | 
 						<?php _e('Powered by','themnific');?> <a href="http://www.wordpress.org">Wordpress</a>. 
 						<?php _e('Designed by','themnific');?> <a href="http://themnific.com">Themnific</a>
